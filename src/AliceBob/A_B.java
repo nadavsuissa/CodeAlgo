@@ -1,4 +1,4 @@
-package Algo;
+package AliceBob;
 
 public class A_B {
     public static int CoinFlips(){
