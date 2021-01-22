@@ -32,6 +32,13 @@ public class Fibonacci {
         return ans;
     }
 
+    // O1
+    static int fib(int n) {
+        double phi = (1 + Math.sqrt(5)) / 2;
+        return (int) Math.round(Math.pow(phi, n)
+                / Math.sqrt(5));
+    }
+
     /**
      * returns the nth element in fibonacci series - recursion
      * Complexity: O(log n)
@@ -49,5 +56,6 @@ public class Fibonacci {
     public static void main(String[] args) {
 
         System.out.println(fiboRec(12));
+        System.out.println(fib(12));
     }
 }
