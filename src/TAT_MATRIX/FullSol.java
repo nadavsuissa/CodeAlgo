@@ -47,5 +47,7 @@ public class FullSol {
                 {1, 1, 0},
                 {1, 1, 0}};
         System.out.println(getBiggestSubMatrix(mat));
+        Vector<int[][]> matt = getAllSubMatrix(mat);
+        System.out.println(matt.toString());
     }
 }

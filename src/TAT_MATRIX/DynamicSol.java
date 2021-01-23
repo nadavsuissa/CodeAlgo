@@ -78,4 +78,12 @@ public class DynamicSol {
         }
         return allSquares;
     }
+
+    public static void main(String[] args) {
+        int[][] mat = {{1, 1, 0},
+                {1, 1, 0},
+                {1, 1, 0}};
+        System.out.println(getBiggestSubMatrix(mat)); // 2 
+        System.out.println(getAllMaxSubSquares(mat)); // [(0,0) - 2, (1,0) - 2]
+    }
 }
