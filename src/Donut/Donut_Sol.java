@@ -12,4 +12,8 @@ public class Donut_Sol {
         if ((time * numOfDonuts) % capacity == 0) return (time * numOfDonuts) / capacity;
         return (time * numOfDonuts) / capacity + 1;
     }
+
+    public static void main(String[] args) {
+        System.out.println(getTime(50, 3));
+    }
 }

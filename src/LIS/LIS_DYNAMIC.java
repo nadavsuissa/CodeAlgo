@@ -62,6 +62,12 @@ public class LIS_DYNAMIC {
     }
 
     public static void main(String[] args) {
-        System.out.println((LISDynamicLen(new int[]{1, -9})));//,2,100,101,3,4,5})));
+        // for Cycle Linked List, create array that is two times the first one
+        // example - {1,4,6} LISCYCLE ON THIS - create new ARRAY {1,4,6,1,4,6} and run LIS 
+        int a[] = {9, 10, 8, 0, 1, 4, 3, 7, 9, 10, 8, 0, 1, 4, 3, 7};
+        int b[] = LISDynamic(a);
+        for (int i = 0; i < b.length; i++) {
+            System.out.println(b[i]);
+        }
     }
 }
